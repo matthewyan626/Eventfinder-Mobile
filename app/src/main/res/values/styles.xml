@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="Widget.Theme.Eventfinder.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch" parent="">
+        <item name="android:colorControlActivated">@color/greenText</item>
+        <item name="android:colorForeground">@color/gray_600</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitchCompat" parent="">
+        <item name="colorControlActivated">@color/greenText</item>
+        <item name="android:colorForeground">@color/gray_600</item>
+    </style>
+
+
+</resources>

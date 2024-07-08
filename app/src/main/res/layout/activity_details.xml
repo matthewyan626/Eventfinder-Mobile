@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:id="@+id/detailsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/topToolbar"
+        />
+            <ImageButton
+                android:id="@+id/backToSearch"
+                android:layout_width="60dp"
+                android:layout_height="68dp"
+                android:layout_margin="0dp"
+                android:background="@color/eventitemtext"
+                android:backgroundTint="@color/topToolbar"
+                app:layout_constraintStart_toStartOf="@+id/detailsToolbar"
+                app:layout_constraintTop_toTopOf="@+id/detailsToolbar"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsToolbar"
+                app:srcCompat="@drawable/green_back_btn" />
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/greenText"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                app:layout_constraintStart_toEndOf="@id/backToSearch"
+                app:layout_constraintTop_toTopOf="@+id/detailsToolbar"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsToolbar"
+                />
+
+    <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icons8_facebook_96"
+        app:layout_constraintTop_toTopOf="@+id/detailsToolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsToolbar"
+        app:layout_constraintEnd_toStartOf="@id/twitterIcon"
+        />
+    <ImageView
+        android:id="@+id/fav"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/heart_outline"
+        app:layout_constraintEnd_toEndOf="@id/detailsToolbar"
+        app:layout_constraintTop_toTopOf="@+id/detailsToolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsToolbar"/>
+
+    <ImageView
+        android:id="@+id/twitterIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icons8_twitter_96"
+        app:layout_constraintTop_toTopOf="@+id/detailsToolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsToolbar"
+        app:layout_constraintEnd_toStartOf="@id/fav" />
+    <FrameLayout
+        android:id="@+id/detailsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        app:layout_constraintTop_toBottomOf="@id/detailsToolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
