@@ -23,7 +23,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCxhRLttMuxu3K3A0mqvmd83ccwUcakl7s" />
+            android:value="ADD API KEY HERE" />
 
         <activity
             android:name=".EventFinderMainActivity"
